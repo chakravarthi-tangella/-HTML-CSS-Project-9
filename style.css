@@ -1,0 +1,518 @@
+/* POPPINS FONT FAMILY */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+  background-color: #F8F8FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* <!-- Header Starts --> */
+
+header{
+  background-color: #4718FE;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* <!-- Navigation Bar Starts --> */
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px 60px 0 200px;
+}
+
+.nav-item{
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.nav-item-active{
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  color: #4718FE;
+  padding: 2px 10px;
+  border-radius: 3px;
+}
+
+nav svg{
+  width: 18px;
+  height: 18px;
+  padding-top: 5px;
+}
+
+/* <!-- LOGO --> */
+
+header>div:nth-child(2){
+  grid-row: 1;
+}
+
+.logo{
+  width: 150px;
+  padding: 60px;
+}
+
+/* <!-- Text --> */
+
+.header-text{
+  padding: 90px 10px 130px 70px;
+}
+
+.header-text img{
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+.header-text h2{
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header-text p{
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+}
+
+/* <!-- Image --> */
+
+.header-image{
+  width: 720px;
+  position: absolute;
+  right: 0px;
+  top: 80px;
+}
+
+
+/* <!-- Companies --> */
+
+.companies{
+  height: 170px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.company-items{
+  text-decoration: none;
+  color: #000;
+  font-family: 'Righteous';
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* <!-- API Section --> */
+
+.api{
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.api-heading{
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 70px;
+  padding-left: 60px;
+}
+
+/* <!-- Cards --> */
+
+.cards{
+  width: 90%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.card-active{
+  height: 100%;
+  width: 18%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card{
+  height: 100%;
+   width: 18%;
+}
+
+
+.card-logo{
+  width: 60px;
+  padding: 35px 20px 3px;
+}
+
+.card-head-active{
+  height: 80px;
+  padding: 3px 20px;
+  font-size: 25px;
+  color: #4718FE;
+}
+
+.card-head{
+  height: 80px;
+  padding: 3px 20px;
+  font-size: 25px;
+}
+
+.card-body{
+  padding: 5px 20px;
+  font-size: 15px;
+}
+
+.api::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4718FE;
+  position: absolute;
+  right: 50px;
+  bottom: 130px;
+}
+
+.api-heading::after{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(135deg);
+  position: absolute;
+  right: 70px;
+  bottom: 145px;
+  z-index: 1;
+}
+
+/* <!-- Blog section --> */
+
+.blog-heading{
+  padding-left: 60px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 60px;
+  margin: 100px 0 40px;
+  width: 95%;
+  position: relative;
+}
+
+.blog-heading::after{
+  content: "See All Articles";
+  color: #4718FE;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+}
+
+/* <!-- Blogs --> */
+
+.blog-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 355px;
+}
+
+.blog-image::before{
+ content: "";
+ width: 100px;
+ height: 360px;
+ background-color: #F8F8FA;
+ position: absolute;
+ left: 0;
+}
+
+.blog-image img{
+  position: absolute;
+  left: 10px;
+  width: 310px;
+}
+
+.blog-card{
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 45%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.blog-content{
+  width: 45%;
+  text-align: left;
+}
+
+.blog-content h6{
+  color: #7C5CFD;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 30px 0 20px;
+}
+
+.blog-content h3{
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.blog-content small{
+  width: 100%;
+  font-weight: 600;
+}
+
+.blog-bottom img{
+  width: 70px;
+  position: absolute;
+  bottom: -22px;
+  right: 230px;
+}
+
+.blog-author{
+  width: 50%;
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  bottom: 8px;
+  right: 22px;
+}
+
+/* <!-- FAQ SECTION --> */
+
+.faq-section{
+  background-color: #E9EDFF;
+  margin-top: 80px;
+  width: 100%;
+  height: 378px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.faq-section div{
+  flex: 1;
+}
+
+.faq-content{
+  margin-left: 80px;
+}
+
+.faq-content h2{
+  font-size: 2.5rem;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+.faq-content h4:first-of-type{
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.faq-content h4:last-of-type{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.faq-content button{
+  background-color: #4719FD;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.faq-image img{
+  width: 700px;
+  margin-left: 60px;
+}
+
+
+/* <!-- Download --> */
+
+.download-section{
+  margin: 100px 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-content{
+  margin-left: 70px;
+}
+
+.download-content h1{
+  font-weight: 700;
+}
+
+.download-content span{
+  font-weight: 400;
+}
+
+.download-email{
+  background-color: #dde2f9;
+  margin-right: 90px;
+  width: 40%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.download-email form{
+  height: 100%;
+  width: 99.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-email input{
+  background-color: transparent;
+  width: 50%;
+  border: none;
+  margin-left: 50px;
+}
+
+.download-email input::placeholder{
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.download-email button{
+  background-color: #4719FD;
+  color: #fff;
+  width: 25%;
+  height: 85%;
+  border-radius: 30px;
+  border: none;
+}
+
+/* <!-- Download --> */
+
+.footer-section{
+  background-color: #4719FD;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section li{
+  list-style: none;
+}
+
+.footer-left{
+  margin-left: 70px;
+  width: 30%;
+}
+
+.footer-logo{
+  margin-bottom: 20px;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-items{
+  font-size: 13px;
+  font-weight: 200;
+  position: relative;
+  color: #fff;
+}
+
+.list-items:not(:last-child)::after{
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  right: -22px;
+  bottom: 3px;
+}
+
+.footer-left .list-items:first-child::after{
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #4719FD;
+  position: absolute;
+  right: -22px;
+  bottom: 3px;
+}
+
+.footer-right{
+  margin-right: 70px;
+  width: 12%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.footer-right1{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.footer-logos{
+  margin-left: 20px;
+}
+
+.logos-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
