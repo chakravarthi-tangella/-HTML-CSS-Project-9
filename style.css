@@ -2,6 +2,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
 
 * {
   font-family: "Poppins", sans-serif;
@@ -9,43 +10,39 @@
   margin: 0;
 }
 
-
 body{
   background-color: #F8F8FA;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 /* <!-- Header Starts --> */
 
 header{
   background-color: #4718FE;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 1rem 4rem;
+  position: relative;
 }
 
 /* <!-- Navigation Bar Starts --> */
 
 nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 30px 60px 0 200px;
+    /* background-color: bisque; */
+    float: right;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav-item{
-  font-size: 15px;
+  font-size: 1rem;
   color: #fff;
   font-weight: 300;
 }
 
 .nav-item-active{
   background-color: #fff;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 600;
   color: #4718FE;
   padding: 2px 10px;
@@ -56,28 +53,25 @@ nav svg{
   width: 18px;
   height: 18px;
   padding-top: 5px;
-}
+} 
 
 /* <!-- LOGO --> */
 
-header>div:nth-child(2){
-  grid-row: 1;
-}
-
 .logo{
-  width: 150px;
-  padding: 60px;
-}
+  width: 130px;
+  padding-top: 1rem;
+} 
 
 /* <!-- Text --> */
 
-.header-text{
-  padding: 90px 10px 130px 70px;
+ .header-text{
+  /* background-color: red; */
+  padding: 8rem 0;
 }
 
 .header-text img{
   width: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 .header-text h2{
@@ -88,10 +82,10 @@ header>div:nth-child(2){
 
 .header-text p{
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 200;
   color: #fff;
-}
+} 
 
 /* <!-- Image --> */
 
@@ -106,14 +100,12 @@ header>div:nth-child(2){
 /* <!-- Companies --> */
 
 .companies{
-  height: 170px;
-  width: 50%;
+  /* background-color: green; */
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-top: 40px;
-  padding-left: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem 4rem 8rem;
 }
 
 .company-items{
@@ -122,223 +114,190 @@ header>div:nth-child(2){
   font-family: 'Righteous';
   font-size: 1.8rem;
   font-weight: 400;
+  margin-right: 3rem;
 }
 
 /* <!-- API Section --> */
 
-.api{
-  height: 450px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  position: relative;
+ .api{
+    /* background-color: burlywood; */
+    padding: 1rem 4rem;
+    position: relative;
 }
 
 .api-heading{
   font-size: 3rem;
   font-weight: 800;
-  line-height: 70px;
-  padding-left: 60px;
-}
+  line-height: 4rem;
+  margin-bottom: 3rem;
+} 
 
 /* <!-- Cards --> */
 
 .cards{
-  width: 90%;
-  height: 65%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 60px;
+  gap: 1rem;
+}
+
+.card-active, .card{
+  height: 12rem;
+  border-radius: 10px;
+  padding: 3rem 2rem;
 }
 
 .card-active{
-  height: 100%;
-  width: 18%;
   background-color: #fff;
-  border-radius: 10px;
+  box-shadow: 0px 0px 10px 3px #6b6767;
 }
 
-.card{
-  height: 100%;
-   width: 18%;
+.card:hover{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 3px #6b6767;
 }
 
 
 .card-logo{
   width: 60px;
-  padding: 35px 20px 3px;
+  padding-bottom: 1rem;
 }
 
 .card-head-active{
-  height: 80px;
-  padding: 3px 20px;
-  font-size: 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #4718FE;
 }
 
 .card-head{
-  height: 80px;
-  padding: 3px 20px;
-  font-size: 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .card-body{
-  padding: 5px 20px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .api::after{
-  content: "";
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #4718FE;
-  position: absolute;
-  right: 50px;
-  bottom: 130px;
-}
-
-.api-heading::after{
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: transparent;
-  border: 3px solid #fff;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  transform: rotate(135deg);
-  position: absolute;
-  right: 70px;
-  bottom: 145px;
-  z-index: 1;
+    content: "\f138";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4718FE;
+    position: absolute;
+    right: 5rem;
+    bottom: 9rem;
 }
 
 /* <!-- Blog section --> */
 
-.blog-heading{
-  padding-left: 60px;
+ .blog-heading{
+  padding-left: 4rem;
   font-size: 1.5rem;
   font-weight: 900;
-  line-height: 60px;
-  margin: 100px 0 40px;
-  width: 95%;
+  margin: 5rem 0 2rem;
   position: relative;
 }
 
 .blog-heading::after{
   content: "See All Articles";
   color: #4718FE;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 700;
   position: absolute;
   right: 60px;
   bottom: 0;
-}
+} 
 
 /* <!-- Blogs --> */
 
-.blog-cards{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 100%;
-  height: 355px;
-}
-
-.blog-image::before{
- content: "";
- width: 100px;
- height: 360px;
- background-color: #F8F8FA;
- position: absolute;
- left: 0;
-}
-
-.blog-image img{
-  position: absolute;
-  left: 10px;
-  width: 310px;
+ .blog-cards{
+    /* background-color: red; */
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
 }
 
 .blog-card{
-  position: relative;
-  background-color: #fff;
-  border-radius: 20px;
-  width: 45%;
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    flex: 0.48;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 350px;
+    border-top-left-radius: 70px;
+  box-shadow: 0px 0px 10px 3px #d7d2d2;
+  }
 
-.blog-content{
-  width: 45%;
-  text-align: left;
-}
+  .blog-image{
+    overflow: hidden;
+  }
 
-.blog-content h6{
-  color: #7C5CFD;
-  font-size: 15px;
-  font-weight: 700;
-  margin: 30px 0 20px;
-}
+  .blog-image img{
+    width: 310px;
+  }
 
-.blog-content h3{
-  width: 100%;
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
+  .blog-content h6{
+    color: #7C5CFD;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .blog-content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .blog-content small{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-.blog-content small{
-  width: 100%;
-  font-weight: 600;
-}
+  .blog-bottom{
+    position: absolute;
+    right: 15rem;
+    bottom: -2rem;
+  }
 
-.blog-bottom img{
-  width: 70px;
-  position: absolute;
-  bottom: -22px;
-  right: 230px;
-}
+  .blog-card-bottom-image{
+    width: 60px;
+  }
 
-.blog-author{
-  width: 50%;
-  font-weight: 700;
-  font-size: 14px;
-  position: absolute;
-  bottom: 8px;
-  right: 22px;
-}
+  .blog-author{
+    width: 50%;
+    font-weight: 700;
+    font-size: 1rem;
+    position: absolute;
+    right: 1.8rem;
+    bottom: 0.2rem;
+  }
 
 /* <!-- FAQ SECTION --> */
 
 .faq-section{
   background-color: #E9EDFF;
   margin-top: 80px;
-  width: 100%;
-  height: 378px;
   display: flex;
   flex-direction: row;
-  justify-content: end;
-}
-
-.faq-section div{
-  flex: 1;
+  /* justify-content: space-between; */
+  align-items: center;
 }
 
 .faq-content{
-  margin-left: 80px;
-}
+    flex: 1;
+    margin-left: 5rem;
+  }
+  
 
 .faq-content h2{
   font-size: 2.5rem;
   line-height: 50px;
-  margin-top: 50px;
 }
 
 .faq-content h4:first-of-type{
@@ -348,7 +307,7 @@ header>div:nth-child(2){
 }
 
 .faq-content h4:last-of-type{
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   margin-top: 25px;
 }
@@ -357,37 +316,35 @@ header>div:nth-child(2){
   background-color: #4719FD;
   margin-top: 20px;
   color: #fff;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 300;
-  padding: 7px 10px;
+  padding: 7px 20px;
   border-radius: 5px;
   border: none;
 }
 
-.faq-image img{
-  width: 700px;
-  margin-left: 60px;
+.faq-image{
+    flex: 1;
 }
 
+.faq-image img{
+  float: right;
+  width: 700px;
+} 
 
 /* <!-- Download --> */
-
+ 
 .download-section{
-  margin: 100px 0;
-  width: 100%;
-  height: 50px;
+  margin: 100px 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.download-content{
-  margin-left: 70px;
-}
-
 .download-content h1{
-  font-weight: 700;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .download-content span{
@@ -396,15 +353,12 @@ header>div:nth-child(2){
 
 .download-email{
   background-color: #dde2f9;
-  margin-right: 90px;
   width: 40%;
-  height: 100%;
+  padding: 5px;
   border-radius: 30px;
 }
 
 .download-email form{
-  height: 100%;
-  width: 99.5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -420,25 +374,23 @@ header>div:nth-child(2){
 
 .download-email input::placeholder{
   color: #000;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .download-email button{
   background-color: #4719FD;
   color: #fff;
-  width: 25%;
-  height: 85%;
+  padding: 1rem 2rem;
   border-radius: 30px;
   border: none;
-}
+} 
 
 /* <!-- Download --> */
 
 .footer-section{
   background-color: #4719FD;
-  width: 100%;
-  height: 230px;
+  padding: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -450,26 +402,21 @@ header>div:nth-child(2){
 }
 
 .footer-left{
-  margin-left: 70px;
-  width: 30%;
-}
-
-.footer-logo{
-  margin-bottom: 20px;
-}
+    width: 30%;
+  }
 
 .list{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.list-items{
-  font-size: 13px;
-  font-weight: 200;
-  position: relative;
-  color: #fff;
-}
+  .list-items{
+    font-size: 1rem;
+    font-weight: 200;
+    position: relative;
+    color: #fff;
+  }
 
 .list-items:not(:last-child)::after{
   content: "";
@@ -491,10 +438,10 @@ header>div:nth-child(2){
   bottom: 3px;
 }
 
+
 .footer-right{
-  margin-right: 70px;
-  width: 12%;
   height: 80px;
+  width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -515,4 +462,4 @@ header>div:nth-child(2){
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} 

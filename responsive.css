@@ -1,0 +1,126 @@
+@media only screen and (max-width: 1510px) {
+    .header-text{
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    header>div:last-child{
+        text-align: center;
+    }
+
+    .header-image{
+        position: inherit;
+        width: 60%;
+    }
+
+    .companies{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem auto 8rem;
+    }
+
+    /* <!-- API Section --> */
+    .api-heading{
+        text-align: center;
+    }
+
+    /* <!-- Cards --> */
+
+    .cards{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card-active, .card{
+        width: 12rem;
+      }
+      
+      .api::after{
+        display: none;
+    }
+
+}
+  
+@media only screen and (max-width: 1350px) {
+    .header-text{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .header-image{
+        width: 80%;
+    }
+
+    .blog-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card{
+        width: 700px;    
+    }
+
+    .blog-author{
+        right: 1rem;
+    }
+
+    /* <!-- Download --> */
+
+    .footer-section{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .list-items:not(:last-child)::after{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1150px) {
+    .nav-item, .nav-item-active{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        text-align: end;
+        margin-top: 1rem;
+    }
+
+    nav .fa-bars {
+        display: block;
+      }
+    
+    /* <!-- Cards --> */
+     .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-active, .card{
+        width: 12rem;
+        margin: 0 auto;
+      }
+
+    /* <!-- FAQ SECTION --> */
+
+    .faq-section{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* <!-- Download --> */ 
+    .download-section{
+    flex-direction: column;
+    gap: 2rem;
+    }
+
+    .download-email{
+    width: 60%;
+    }
+}
