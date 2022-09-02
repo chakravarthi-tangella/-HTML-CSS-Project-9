@@ -25,7 +25,6 @@ header{
 /* <!-- Navigation Bar Starts --> */
 
 nav{
-    /* background-color: bisque; */
     float: right;
     width: 40%;
     display: flex;
@@ -69,7 +68,6 @@ nav .fa-bars {
 /* <!-- Text --> */
 
  .header-text{
-  /* background-color: red; */
   padding: 8rem 0;
 }
 
@@ -104,7 +102,6 @@ nav .fa-bars {
 /* <!-- Companies --> */
 
 .companies{
-  /* background-color: green; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -124,7 +121,6 @@ nav .fa-bars {
 /* <!-- API Section --> */
 
  .api{
-    /* background-color: burlywood; */
     padding: 1rem 4rem;
     position: relative;
 }
@@ -215,7 +211,6 @@ nav .fa-bars {
 /* <!-- Blogs --> */
 
  .blog-cards{
-    /* background-color: red; */
     margin-left: 4rem;
     display: flex;
     flex-direction: row;
@@ -289,7 +284,6 @@ nav .fa-bars {
   margin-top: 80px;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
